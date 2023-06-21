@@ -1,8 +1,9 @@
 {
   "name": "it-sting-so-much",
   "version": "1.0.0",
-  "main": "/test1/app.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
