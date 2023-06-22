@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "node-app.js",
   "scripts": {
-    "test": "echo \"Test script executed\""
+    "test": "echo \"Test script executed\"",
+    "start": "node node-app.js"
   },
   "keywords": [],
   "author": "",
