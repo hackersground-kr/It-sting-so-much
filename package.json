@@ -4,7 +4,7 @@
   "main": "node-app.js",
   "scripts": {
     "test": "echo \"Test script executed\"",
-    "build": "webpack"
+    "build": "node node-app.js"
   },
   "keywords": [],
   "author": "",
