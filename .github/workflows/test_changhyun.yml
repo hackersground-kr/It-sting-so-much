@@ -52,4 +52,4 @@ jobs:
           app-name: 'changhyun'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_806B976ACA314767838D9972E25098D6 }}
-          package: It-sting-so-much
+          package: .
