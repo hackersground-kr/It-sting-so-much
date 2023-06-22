@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'pureImpact'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FA49EB8ABC864A5E840A5594CC6CD729 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1936F14885F47C484EC9E18FEACD9DA }}
           package: .
