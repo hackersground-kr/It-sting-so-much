@@ -62,4 +62,4 @@ jobs:
           app-name: 'pureImpact'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1936F14885F47C484EC9E18FEACD9DA }}
-          package: /home/runner/work/It-sting-so-much/It-sting-so-much/node-app.js
+          package: https://github.com/hackersground-kr/It-sting-so-much/blob/test/node-app.js
