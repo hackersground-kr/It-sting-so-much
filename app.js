@@ -20,14 +20,11 @@ let corsOptions = {
   Credential: true,
 };
 app.use(cors(corsOptions));
-app.use(express.static(path.join(__dirname, 'pureimpact/build')));
-app.get('/',(req,res) => {
-  res.sendFile(path.join(__dirname,'pureimpact/build/index.html'));
-})
-app.get('*',(req,res) =>{
-  res.sendFile(path.join(__dirname,'pureimpact/build/index.html'));
-})
-
+const staticDir = path.resolve(__dirname, '../');
+app.use(express.static(staticDir));
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(staticDir, 'pureimpact/build/index.html'));
+});
 app.use(session({
   secret: '12345',
   resave: false,
