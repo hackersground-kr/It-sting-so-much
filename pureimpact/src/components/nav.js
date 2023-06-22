@@ -18,7 +18,7 @@ const Nav = ()  => {
     <div>
       <nav className={styles.nav}>
         <div>
-          <label className={styles.logo}>logo</label>
+          <label className={styles.logo}>PureImpact</label>
         </div>
         <div className={styles.navright}>
           <Link className={styles.navtitle} to="/">home</Link>

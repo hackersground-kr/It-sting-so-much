@@ -1,8 +1,10 @@
 import styles from '../css/list.module.css'
 import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
 import '../css/input.css'
 const List = () => {
 	const [expanded, setExpanded] = useState(false);
+	const [list, setList] = useState([]);
 	const inputRef = useRef(null);
 
 
@@ -16,8 +18,21 @@ const List = () => {
 		}
 	};
 
+  useEffect(() => {
+    axios 
+      .get("api/list") 
+      .then((res) => {
+        setList(res.data.list);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []); 
+
+
 	useEffect(() => {
 		document.addEventListener('mousedown', handleClickOutside);
+		
 		return () => {
 			document.removeEventListener('mousedown', handleClickOutside);
 		};
@@ -46,6 +61,15 @@ const List = () => {
 
 					</div>
 					<div className={styles.ListContainer}>
+					{
+						list.map((list,idx)=>{
+							return(
+								<>
+
+								</>
+							)
+						})
+					}
 						<div className={styles.List}>
 							<div className={styles.title_img_container}>
 								<div className={styles.title_img}>
