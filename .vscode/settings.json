@@ -2,5 +2,7 @@
   "appService.zipIgnorePattern": [
     "node_modules{,/**}",
     ".vscode{,/**}"
-  ]
+  ],
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/bfa39d86-1058-4824-8074-e9d283d6c321/resourceGroups/rg-hg-It-sting-so-much/providers/Microsoft.Web/sites/chanm",
+  "appService.deploySubpath": "."
 }
