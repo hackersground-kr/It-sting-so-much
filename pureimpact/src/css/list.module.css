@@ -1,0 +1,148 @@
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-right: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.List_main {
+  margin-top: 70px;
+	width: 100%;
+	height: 1618px;
+
+
+}
+
+.Title {
+  width: 40%;
+  height: 20%;
+  font-size: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.List_header {
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 0.5px rgb(147, 147, 147);
+}
+
+.search_container {
+  display: flex;
+  position: relative;
+  top: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.post_btn {
+  height: 40px;
+  width: 75px;
+  margin-right: 20px;
+  margin-left: 15px;
+  background-color: #6effa1;
+  border-radius: 7px;
+  border: 0.3px solid #00ff6a;
+  cursor: pointer;
+}
+
+.ListContainer{
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.List { 
+  width: 90%;
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(147, 147, 147);
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.title_img_container {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_img {
+  height: 80%;
+  width: 80%;
+  background-color: #b1ddff;
+}
+
+.List_title {
+  height: 100%;
+  width: 65%;
+  margin-left: 20px;
+}
+
+.title {
+  font-weight: 900;
+  margin-top: 3px;
+  height: 45%;
+  align-items: center;
+  display: flex;
+}
+
+.subtitle {
+  font-weight: 100;
+  height: 40%;
+  align-items: center;
+  display: flex;
+}
+
+.user {
+  width: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.usertemp {
+  width: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.next_web {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.next_btn {
+  width: 28px;
+  height: 28px;
+  background-color: #6effa1;
+  border-radius: 7px;
+  border: 0.3px solid #00ff6a;
+  cursor: pointer;
+  margin-right: 10px;
+}

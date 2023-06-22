@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+
+.mainImg{
+    width: 100%;
+    height: 530px;
+    margin-top: 80px;
+    background-image: 
+    linear-gradient(181deg, #b1ddff 0%, #000 300% 102%, #000 200% 144%, #ff8800 105% 105%)
+  ;
+}
+
+.mainText{
+    width: 500px;
+    height: 150px;
+    font-size: 40px;
+    padding: 35px;
+    padding-top: 80px;
+    animation: slideIn 2.5s ease-out;
+    animation-delay: 0.5s;
+}
+
+.mainText1{
+    padding-left: 30px;
+    font-size: 20px;
+    animation: slideIn 2.5s ease-out;
+    animation-delay: 0.5s;
+}
+.btn{
+    width: 130px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.MainColor{
+    width: 100%;
+    height: 120px;
+    background-image: 
+    linear-gradient(358deg, #b1ddff -3% -3%, #000 300% 102%, #000 200% 144%, #ff9200 121% 121%)
+  ;
+}
+
+.flower{
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    top: 280px;
+    right: 20px;
+    background-image: url('../../../img/hart.png');
+    position: absolute;
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:HOVER{
+    background: none;
+    color: black;
+    animation: hoverAnimation 0.5s ease;
+}
+
+  
+

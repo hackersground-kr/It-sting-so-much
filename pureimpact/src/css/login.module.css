@@ -1,0 +1,89 @@
+.login_flex {
+  width: 100%;
+  height: 100vh;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(61, 61, 61, 0.366);
+  position: fixed;
+  z-index: 5;
+}
+.closeBtn{
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+}
+.idpw_container {
+  height: 115px;
+}
+
+.id {
+  display: block;
+  margin: 0 auto;
+  width: 210px;
+  height: 40px;
+  border: 0;
+  background: none;
+  border-bottom: 1px solid white;
+  color: whtie;
+  outline: none;
+}
+
+.pw {
+  margin: 0 auto;
+  width: 210px;
+  height: 40px;
+  display: block;
+  border: 0;
+  margin-top: 10px;
+  background: none;
+  border-bottom: 1px solid white;
+  color: whtie;
+  outline: none;
+}
+
+.logintitle{
+  font-weight: 100;
+  color: white;
+  width: 300px;
+  height: 100px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container{
+  width: 300x;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  background-image: linear-gradient(rgb(247, 146, 146),rgb(253, 64, 64));
+  background-size: cover;
+}
+
+.login_text {
+  color: white;
+  font-weight: 100;
+  font-size: 10px;
+  position: relative;
+  left: 190px;
+}
+
+.submit{
+  margin: 0 auto;
+  display: block;
+  height: 43px; 
+  width: 73%;
+  border: 0.1px solid white;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 50px;
+}
