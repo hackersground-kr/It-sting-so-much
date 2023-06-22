@@ -4,7 +4,7 @@
   "main": "node-app.js",
   "scripts": {
     "test": "echo \"Test script executed\"",
-    "build": "node node-app.js"
+    "build": "node-app.js && exit 1"
   },
   "keywords": [],
   "author": "",
