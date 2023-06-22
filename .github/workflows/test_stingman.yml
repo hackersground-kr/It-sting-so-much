@@ -53,4 +53,4 @@ jobs:
           app-name: 'stingman'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_290600253614477CB0500E3E0CDF8D75 }}
-          package: ${{ github.workspace }}/node-app.js
+          package: ${{ github.workspace }}
