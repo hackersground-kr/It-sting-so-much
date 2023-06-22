@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - pureimpact
+name: Build and deploy Node.js app to Azure Web App - helpmemans
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -26,12 +26,12 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-
+      
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: node-app.js
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -47,15 +47,10 @@ jobs:
           name: node-app
 
       - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
+        id: deploy-to-webapp
         with:
-          app-name: 'pureimpact'
+          app-name: 'helpmemans'
           slot-name: 'Production'
-<<<<<<< HEAD
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CA2E80172C7943438C3C3B416BDE25C2 }}
-          package: ${{ github.workspace }}/node-app.js
-=======
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C9DE1DB28C9141949FFBC37760515533 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_27108AF69F094396A6C9EA819725FC95 }}
           package: .
->>>>>>> ff3ab791a0b8a1a15d9d1b0decf93114c229b5e5
