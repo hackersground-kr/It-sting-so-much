@@ -60,4 +60,4 @@ jobs:
           app-name: 'pureImpact'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1936F14885F47C484EC9E18FEACD9DA }}
-          package: ${{ github.workspace }}/node-app.js
+          package: node-app.js
