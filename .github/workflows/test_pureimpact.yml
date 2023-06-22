@@ -28,7 +28,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '18.x'
+          node-version: '14.x'
 
       - name: npm install, build, and test
         run: |
@@ -62,4 +62,4 @@ jobs:
           app-name: 'pureImpact'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1936F14885F47C484EC9E18FEACD9DA }}
-          package: /hackersground-kr/It-sting-so-much/blob/test/node-app.js
+          package: ${{ github.workspace }}/node-app.js
