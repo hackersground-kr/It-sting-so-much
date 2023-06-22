@@ -1,13 +1,22 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
 name: Build and deploy Node.js app to Azure Web App - pureImpact
 
 on:
   push:
     branches:
       - test
-  workflow_dispatch:
+  workflow_dispatch: 
+  
+permissions:
+  actions: read
+  checks: read
+  contents: read
+  deployments: read
+  issues: read
+  packages: read
+  pull-requests: read
+  repository-projects: read
+  security-events: read
+  statuses: read
 
 jobs:
   build:
@@ -19,7 +28,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '18.x'
+          node-version: '14.x'
 
       - name: npm install, build, and test
         run: |
@@ -31,7 +40,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: node-app.js
 
   deploy:
     runs-on: ubuntu-latest
@@ -52,5 +61,5 @@ jobs:
         with:
           app-name: 'pureImpact'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CB89C71533E54C97A23743E39643E22A }}
-          package: .
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1936F14885F47C484EC9E18FEACD9DA }}
+          package: ${{ github.workspace }}/node-app.js
