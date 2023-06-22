@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - test
-  workflow_dispatch:
+  workflow_dispatch: 
   
 permissions:
   actions: read
@@ -43,7 +43,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: /node-app.js
+          path: node-app.js
 
   deploy:
     runs-on: ubuntu-latest
@@ -65,4 +65,4 @@ jobs:
           app-name: 'pureImpact'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C1936F14885F47C484EC9E18FEACD9DA }}
-          package: /node-app.js
+          package: ${{ github.workspace }}/node-app.js
